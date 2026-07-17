@@ -28,7 +28,7 @@ for eq_dict in all_eq_dicts:
 title = 'Глобальные землетрясения'
 fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title,
                      color=mags,
-                     color_continuous_scale='Viridis',
+                     color_continuous_scale='ylorrd',
                      labels={'color': 'Магнитуда'},
                      projection='natural earth',
                      hover_name=eq_titles    # теперь plotly добавит инфо о каждом землетрясении в текст подсказки для каждой точки.
